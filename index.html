@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>富山湾カヤックの無料ツール｜出艇判断・釣果予報・釣行記録・水深マップ</title>
+<meta name="description" content="カヤック釣りのための無料ツール4つ。出艇判断チェック・釣果予報・釣行記録ノート・水深マップ。登録不要、スマホで開くだけ。富山湾以外でも使えます。">
+<link rel="canonical" href="https://sanzai-mokujiroku.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="富山湾カヤックの無料ツール4つ">
+<meta property="og:description" content="出艇判断・釣果予報・釣行記録・水深マップ。登録不要、スマホで開くだけ。">
+<meta property="og:url" content="https://sanzai-mokujiroku.github.io/">
+<meta property="og:image" content="https://sanzai-mokujiroku.github.io/kayak-go-check/icon-512.png">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0e294e">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" href="icons/go-check.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@800&display=swap&text=%E3%81%AE%E3%82%A7%E3%82%AB%E3%82%AF%E3%83%81%E3%83%83%E3%83%84%E3%83%88%E3%83%8E%E3%83%97%E3%83%9E%E3%83%A4%E3%83%AB%E3%83%BC%E4%BA%88%E5%87%BA%E5%88%A4%E5%A0%B1%E5%AF%8C%E5%B1%B1%E6%96%99%E6%96%AD%E6%9E%9C%E6%B0%B4%E6%B7%B1%E6%B9%BE%E7%84%A1%E8%89%87%E8%A1%8C%E8%A8%98%E9%87%A3%E9%8C%B2">
+<style>
+  :root{ --kon:#0e294e; --sakura:#ff8fbb; --bg:#f3f6f9; --card:#fff; --ink:#1c2733; --muted:#67778a; --line:#e2e8f0; }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",Meiryo,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+  .hero{background:var(--kon);color:#fff;padding:44px 20px 70px;position:relative;overflow:hidden}
+  .hero::after{content:"";position:absolute;left:-10%;right:-10%;bottom:-60px;height:140px;opacity:.16;
+    background:repeating-radial-gradient(ellipse 120px 34px at 50% 120%,transparent 0 16px,#8fc6ee 16px 19px)}
+  .wrap{max-width:640px;margin:0 auto;position:relative;z-index:1}
+  .icons{display:flex;gap:10px;margin-bottom:22px}
+  .icons img{width:52px;height:52px;border-radius:13px;box-shadow:0 4px 12px rgba(0,0,0,.3)}
+  h1{font-family:"Shippori Mincho B1","Hiragino Mincho ProN",serif;font-weight:800;font-size:clamp(30px,8vw,44px);line-height:1.3;margin:0}
+  h1 em{font-style:normal;color:var(--sakura)}
+  .lead{margin:14px 0 0;color:#c9d5e2;font-size:15.5px}
+  main{max-width:640px;margin:-40px auto 0;padding:0 16px;position:relative;z-index:2}
+  .tool{display:flex;align-items:center;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px;margin-bottom:12px;
+    text-decoration:none;color:inherit;box-shadow:0 2px 10px rgba(14,41,78,.06)}
+  .tool:hover,.tool:focus-visible{border-color:#9fb6cf;outline:none}
+  .tool:focus-visible{box-shadow:0 0 0 3px #8fc6ee}
+  .tool img{flex:none;border-radius:16px}
+  .body{display:flex;flex-direction:column;min-width:0}
+  .name{font-family:"Shippori Mincho B1","Hiragino Mincho ProN",serif;font-weight:800;font-size:21px;color:var(--kon)}
+  .desc{font-size:14px;color:#3b4a5a;margin-top:2px}
+  .tag{font-size:12px;color:var(--muted);margin-top:6px}
+  .go{margin-left:auto;font-size:28px;color:#9fb0c2;padding-left:4px}
+  .note{background:#fff8e6;border:1px solid #f0d68a;border-radius:14px;padding:12px 14px;font-size:13px;color:#5b4a2a;margin:18px 0}
+  footer{max-width:640px;margin:0 auto;padding:6px 16px 40px;font-size:13.5px;color:var(--muted)}
+  footer a{color:var(--kon);font-weight:700}
+</style>
+</head>
+<body>
+<div class="hero"><div class="wrap">
+  <div class="icons"><img src="icons/go-check.png" alt=""><img src="icons/fish-forecast.png" alt=""><img src="icons/fishing-log.png" alt=""><img src="icons/depth-map.png" alt=""></div>
+  <h1>富山湾カヤックの<br><em>無料</em>ツール</h1>
+  <p class="lead">スマホで開くだけ。登録もアプリも要りません。<br>富山湾以外の海でも、現在地で使えます。</p>
+</div></div>
+<main>
+    <a class="tool" href="https://sanzai-mokujiroku.github.io/kayak-go-check/">
+      <img src="icons/go-check.png" width="72" height="72" alt="">
+      <span class="body">
+        <span class="name">出艇判断チェック</span>
+        <span class="desc">風・波・うねり・雷から、今日カヤックで海に出ていいかを時間ごとに判定。</span>
+        <span class="tag">GO／要確認／STOP</span>
+      </span>
+      <span class="go" aria-hidden="true">›</span>
+    </a>
+    <a class="tool" href="https://sanzai-mokujiroku.github.io/kayak-fish-forecast/">
+      <img src="icons/fish-forecast.png" width="72" height="72" alt="">
+      <span class="body">
+        <span class="name">釣果予報</span>
+        <span class="desc">水温・潮・天気から、16魚種の「今日の釣れそう度」を◎○△×と点数で。</span>
+        <span class="tag">16魚種・カラー魚拓</span>
+      </span>
+      <span class="go" aria-hidden="true">›</span>
+    </a>
+    <a class="tool" href="https://sanzai-mokujiroku.github.io/kayak-fishing-log/">
+      <img src="icons/fishing-log.png" width="72" height="72" alt="">
+      <span class="body">
+        <span class="name">釣行記録ノート</span>
+        <span class="desc">釣れた魚と時間を、その場で記録。天気と潮はボタン一つで自動入力。</span>
+        <span class="tag">データはスマホの中だけ</span>
+      </span>
+      <span class="go" aria-hidden="true">›</span>
+    </a>
+    <a class="tool" href="https://sanzai-mokujiroku.github.io/kayak-depth-map/">
+      <img src="icons/depth-map.png" width="72" height="72" alt="">
+      <span class="body">
+        <span class="name">水深マップ</span>
+        <span class="desc">航空写真に、海の深さの線（等深線）を重ねた地図。現在地の水深もすぐ見られる。</span>
+        <span class="tag">根メモを保存できる</span>
+      </span>
+      <span class="go" aria-hidden="true">›</span>
+    </a>
+  <p class="note">⚠️ 個人が自分のために作ったツールです。出艇するかどうかの最終判断は、天気予報や現地の様子と合わせて、自己責任でお願いします。</p>
+</main>
+<footer>
+  <p>作った経緯や、道具をそろえる話は、ブログ<br><a href="https://kayak-papa.hatenablog.com/">富山湾カヤック釣行 散財黙示録</a> で書いています。</p>
+</footer>
+</body>
+</html>
